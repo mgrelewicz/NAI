@@ -7,12 +7,6 @@
 # 
 # Fuzzy logic theory (link: https://www.guru99.com/what-is-fuzzy-logic.html), which basically means that the truth values of variables may be any real number between 0 and 1 both inclusive. It is employed to handle the concept of partial truth, where the truth value may range between completely true and completely false.
 # 
-# Migraine problem.
-# Goal: This fuzzy control system will help you with choosing optimal dosis of 
-# your migraine pill. 
-# You will be asked to answer a few simple questions.
-# As an answer, you will enter a digit from the range 0 - 5, 
-# which corresponds to "worst - best" scale.
 # 
 # The code is written in python: https://www.python.org/download/releases/3.0/
 # 
