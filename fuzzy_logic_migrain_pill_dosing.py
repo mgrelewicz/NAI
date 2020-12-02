@@ -5,13 +5,11 @@
 # @authors: Marcin Grelewicz (s17692), Edyta Bartos (s17699)
 # based on scikit-fuzzy library usage examples: https://pythonhosted.org/scikit-fuzzy/
 # 
-# Fuzzy logic theory (link: https://www.guru99.com/what-is-fuzzy-logic.html), which basically means that the truth values of variables may be any real number between 0 and 1 both inclusive. It is employed to handle the concept of partial truth, where the truth value may range between completely true and completely false.
-# 
+# Fuzzy logic theory (link: https://www.guru99.com/what-is-fuzzy-logic.html), which basically means that the truth values of variables may be any real number between 0 and 1 both inclusive. It is employed to handle the concept of partial truth, where the truth value may range between completely true and completely false. 
 # 
 # The code is written in python: https://www.python.org/download/releases/3.0/
 # 
-# """
-
+#
 # Migraine problem.
 # 
 # Sometimes can happen that you suffer a very strong migraine attack on the trip or at work where you don't have your medications with you. As you don't have typical migraine aura, you never know when it can come and after 1 or 2 hrs when you finally get to the farmacy it is very often too late to kill the pain.
@@ -68,6 +66,7 @@
 # 
 # 
 #             it would recommend: "If you already feel bad take 2 pills, if not make sure you have 2 pills in your bag before going anywhere even though we recommend you to stay home...".
+# """
 
 # In[97]:
 
