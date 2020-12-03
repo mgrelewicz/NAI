@@ -12,13 +12,6 @@
  of partial truth, where the truth value may range between completely true 
  and completely false.
 
- Migraine problem.
- Goal: This fuzzy control system will help you with choosing optimal dosis of 
- your migraine pill. 
- You will be asked to answer a few simple questions.
- As an answer, you will enter a digit from the range 0 - 5, 
- which corresponds to "worst - best" scale.
-
  The code is written in python: https://www.python.org/download/releases/3.0/
 
 
@@ -115,11 +108,6 @@ emotional_wellness = ctrl.Antecedent(np.arange(0, 11, 1), 'emotional_wellness')
 weather_quality = ctrl.Antecedent(np.arange(0, 11, 1), 'weather_quality')
 physical_wellness = ctrl.Antecedent(np.arange(0, 11, 1), 'physical_wellness')
 
-# 0-1 'none' 
-# 1-2 '1 pill'
-# 2-3 '2 pills'
-# 3-4 'go to the doctor!'
-
 drug_dosage = ctrl.Consequent(np.arange(0, 5, 1), 'drug_dosage')
 
 # Auto-membership function population is possible with .automf(3, 5, or 7)
@@ -194,14 +182,13 @@ print(dosaging.output['drug_dosage'])
 drug_dosage.view(sim=dosaging)
 
 
-if dosaging.output['drug_dosage'] <= 1:
+if dosaging.output['drug_dosage']<=1.7:
     print("Congrats! You don't need any pill for today!")
-elif dosaging.output['drug_dosage'] > 1 and dosaging.output['drug_dosage'] <=2:
+elif dosaging.output['drug_dosage']>1.7 and dosaging.output['drug_dosage']<=2:
     print("If you already feel bad take 1 pill, if not, make sure you have" \
           " 1 pill in your bag before going anywhere")
-elif dosaging.output['drug_dosage'] > 2 and dosaging.output['drug_dosage'] <=3:
+elif dosaging.output['drug_dosage']>2 and dosaging.output['drug_dosage']<=2.3:
     print("If you already feel bad take 2 pills, if not, take 1 pill and" \
           " make sure you have 1 more pill in your bag before going anywhere.")
 else:
     print("You should take 2 pills, stay home or go to the doctor if needed.")
-
