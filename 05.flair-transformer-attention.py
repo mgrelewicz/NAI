@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
+"""
+Edyta Bartoś, Marcin Grelewicz
 
+Program z wykorzystaniem transformera ("Attention is all you need") (https://arxiv.org/abs/1706.03762)
+oraz biblioteki flair https://github.com/flairNLP/flair/tree/master/resources/docs (embeddingi),
+mający na celu wygenerowanie tytułu (abstrakcyjnej, krótkiej summaryzacji).
+Baza danych stowrzona przez autorów metodą webscrappingu (13tys. artykułów + tytułów).
+Praca napisana w Pythonie, z wykorzystaniem Tensorflow i api Keras.
+"""
 # In[4]:
 
 
